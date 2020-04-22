@@ -1,0 +1,182 @@
+html {
+    
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    letter-spacing: 0.1rem;
+}
+
+body {
+    
+    background-color: #FFFFFF;
+}
+nav {
+    
+    width: 100%;
+    display: flex;
+    height: 6.8vh;
+    background-color: #31A7C1;
+    align-items: center;
+    position: relative;
+}
+
+
+.fa-bars {
+    
+    color: white;
+    font-size: 2rem;
+    margin-left: 7rem;
+    margin-right: 2rem;
+    flex-shrink: 0;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.menu-nav {
+    
+    visibility: hidden;
+    max-height: 0px;
+    position: absolute;
+    font-weight: bold;
+}
+
+.menu-nav a {
+    
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.menu-nav li {
+    
+    color: white;
+    padding: 2rem 7rem;
+    font-size: 1.6rem;
+}
+
+.hamburger:hover .menu-nav {
+    transition: max-height 2s ease-in-out;
+    visibility: visible;
+    display: flex;
+    max-height: 100rem;
+    background: #E9C91E; 
+    border-bottom-right-radius: 1rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    text-transform: uppercase;
+    
+}
+
+.submenu-nav {
+    
+    position: absolute;
+    background: #C1C6B2;
+    left: 26rem;
+    border-radius: 1rem;
+    max-height: 0rem;
+    visibility: hidden;
+}
+
+.menu-nav > li:hover {
+    
+    transition: background 1s ease;
+    background: #C1C6B2;
+}
+
+.menu-nav > li:hover .submenu-nav {
+    
+    transition: max-height 2s ease-in-out;
+    visibility: visible;
+    max-height: 100rem;
+}
+
+.submenu-nav > li:hover {
+    
+    transition: background-color 1s ease;
+    background-color: #E9C91E;
+}
+
+
+h1 {
+    
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-shrink: 0;
+}
+
+h1 span {
+    
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
+    margin-left: 2rem;
+}
+
+nav i {
+    
+        color: white;
+        font-size: 2rem;
+        margin-left: 2rem;
+}
+.fa-school {
+    
+    color: white;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+.search_input {
+    
+    padding: 1rem;
+    background: #31A7C1;
+    border-radius: 0.8rem;
+    color: white;
+    border-color: white;
+    margin-left: 2rem;
+    border: 2px solid white;
+    flex-basis: 40rem;
+    flex-shrink: 2;
+    width: 0;
+    
+}
+
+::placeholder {
+    
+    color: white;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    opacity: 1;
+}
+
+.fa-search {
+    
+    color: white;
+    font-size: 2.2rem;
+    
+}
+
+.search_button {
+    
+    background: transparent;
+    border: none;
+    margin-right: 2rem;
+}
+
+.media-place{
+    
+    display: flex;
+    margin-left: auto;
+    margin-right: 7rem;
+    border-left: 2px solid white;
+    flex-shrink: 0;
+}
+
+.media-place > li:hover i {
+    
+    transition: color 1s ease;
+    color: #E9C91E;
+}
+

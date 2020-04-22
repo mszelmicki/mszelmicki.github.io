@@ -1,0 +1,57 @@
+article {
+    
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.logo-picture {
+    
+    display: flex;
+    width: 40%;
+    min-width: 64rem;
+}
+
+
+.main-page {
+    
+    width: 100%;
+}
+.describe {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 7rem;
+    visibility: hidden;
+    animation-name: describe-animation;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes describe-animation {
+    
+    from{opacity: 0;}
+    to{opacity: 1; visibility: visible;}
+}
+
+.describe p {
+    
+    font-family: 'Lato', sans-serif;
+    font-size: 2.0rem;
+    line-height: 3rem;
+}
+
+
+.describe h2 {
+    
+    font-size: 3.0rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    font-family: 'Prata', serif;
+    
+}
